@@ -6,7 +6,7 @@
   "homepage": "https://Illiya-Lunev.github.io/Team-project",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url/Team-project/"
+    "build": "parcel build src/*.html --public-url /Team-project/"
   },
   "repository": {
     "type": "git",
