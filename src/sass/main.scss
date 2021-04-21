@@ -2,6 +2,9 @@
 @import './utils/visually-hidden';
 @import './utils/mixins';
 
+@import './base/common';
+@import './base/container';
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/products';
