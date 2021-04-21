@@ -1,0 +1,49 @@
+// Семейство шрифтов
+$primary-font: 'DM Sans', sans-serif;
+$secondary-font: 'Titan One', sans-serif;
+
+// Цветовая палитра фонов
+$bgc: (
+  'primary': #ffffff,
+  'secondary': #fff5f6,
+  'hero': #ffb8ca,
+  'menu': #e17992,
+  'first-product': #ffb8ca,
+  'second-product': #f0d1a5,
+  'third-product': #c2e297,
+  'comment': #fafafa,
+  'dark-btn': #d41443,
+  'light-btn': #ffffff,
+  'first-category': #f0d1a5,
+  'second-category': #c2e297,
+  'social': #fea5bb,
+);
+
+// Цветовая палитра текстовых (строчных) элементов
+$text: (
+  'title': #d41443,
+  'before-title': #ffa5ba,
+  'dark-txt': #000000,
+  'medium-txt': #907e82,
+  'light-txt': #ffffff,
+  'work-time': #ffa5ba,
+  'light-btn': #d41443,
+  'dark-btn': #ffffff,
+  'num-values': #d41443,
+);
+
+// Цветовая палитра при наведении и фокусе
+$action: (
+  'light-btn': #ecebeb,
+  'dark-btn': #c7133e,
+  'nav-item': #d41443,
+);
+
+// Цветовая палитра декоративных элементов
+$decor: (
+  'line': #e1e1e1,
+  'quote': #e1e1e1,
+  'menu-line': #e18298,
+  'light-dots': #ffffff,
+  'dark-dots': #c7133e,
+);
