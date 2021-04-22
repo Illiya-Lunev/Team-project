@@ -1,4 +1,5 @@
 .hero {
+  padding-top: 83px;
   background-color: #ffb8ca;
 }
 
@@ -11,7 +12,10 @@
   }
 
   .hero {
+    position: relative;
+    min-width: 320px;
     max-width: 480px;
+    height: 502px;
   }
 
   .hero__title {
@@ -32,5 +36,92 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #ffffff;
+  }
+
+  .container {
+    padding-right: 0px;
+  }
+
+  .hero__picture-elipce {
+    position: absolute;
+    left: 36px;
+    top: 83px;
+    max-width: 346px;
+    z-index: 1;
+  }
+
+  .hero__picture-icecream {
+    position: absolute;
+    left: 117px;
+    top: 92px;
+    z-index: 2;
+  }
+
+  .hero__title,
+  .hero__title-white,
+  .hero__link-products,
+  .hero__link-about {
+    display: inline-block;
+  }
+
+  .hero__title,
+  .hero__title-white {
+    max-width: 218px;
+  }
+
+  .hero__mobile-wrapper {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 193px;
+    z-index: 5;
+  }
+
+  .hero__link-about,
+  .hero__link-products {
+    display: inline-block;
+    margin-top: 19px;
+  }
+
+  .hero__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hero__list-item:last-child {
+    margin-left: 8px;
+  }
+
+  .hero__link-products {
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    min-width: 63px;
+    height: 24px;
+
+    background: #d41443;
+    border-radius: 20px;
+  }
+
+  .hero__link-about {
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    color: #d41443;
+
+    min-width: 83px;
+    height: 24px;
+    background: #fff;
+    border-radius: 20px;
   }
 }
