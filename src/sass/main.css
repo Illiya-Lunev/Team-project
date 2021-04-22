@@ -66,10 +66,18 @@ img {
   }
 }
 
+.about {
+  background-color: #fff5f6;
+}
+
+.about-header {
+  color: #d41443;
+  font-size: 34px;
+}
+
 .gallery-list__img {
   width: 100%;
   max-width: 364px;
-  margin: 0 auto;
 }
 
 .gallery {
