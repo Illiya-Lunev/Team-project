@@ -1,10 +1,15 @@
+// -- Стили компоненты swiper Space Between
 .swiper-container {
   display: flex;
   align-items: center;
   width: 100%;
-  min-height: 350px;
+  //   min-height: 350px;
   margin-right: 0;
   z-index: 0;
+}
+
+.swiper-wrapper {
+  margin-bottom: 35px;
 }
 
 .swiper-slide {
@@ -14,6 +19,38 @@
   margin-right: 0;
 }
 
+.swiper-pagination-bullet {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  //   background: #d9d9d9;
+
+  border-radius: 50%;
+  outline: none;
+}
+
+.swiper-pagination-bullet-active {
+  background: transparent;
+  border-radius: 0;
+  background-image: url(/images/home.svg);
+  background-repeat: no-repeat;
+
+  text-align: center;
+
+  background-size: contain;
+  transform: scale(1.5);
+  outline: none;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 18px;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bulletmy {
+  cursor: pointer;
+}
+
+// -- Стили самого слайдера
 .reviews {
   padding-top: 62px;
   padding-bottom: 66px;
