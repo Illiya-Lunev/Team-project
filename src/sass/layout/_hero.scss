@@ -1,3 +1,36 @@
 .hero {
   background-color: #ffb8ca;
 }
+
+@media screen and (max-width: 767px) {
+  .hero__picture-girl,
+  .hero__picture-milk,
+  .hero__description,
+  .hero__button-description {
+    display: none;
+  }
+
+  .hero {
+    max-width: 480px;
+  }
+
+  .hero__title {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 0.96;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+
+  .hero__title-white {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
