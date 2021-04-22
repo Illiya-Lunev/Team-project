@@ -12,6 +12,11 @@
   }
 }
 
+.footer__contanier {
+  @media screen and(min-width: 768px) {
+  }
+}
+
 .footer__title {
   width: 232px;
   margin-bottom: 17px;
@@ -28,7 +33,6 @@
     letter-spacing: 0.04em;
     width: 340px;
     margin-right: 0;
-    display: inline-block;
   }
 }
 
@@ -78,8 +82,6 @@
   &:focus {
     background: #d41443;
   }
-  @media screen and(min-width: 768px) {
-  }
 }
 
 .footer__icon {
@@ -104,6 +106,7 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 1.86;
+  color: #000;
 }
 
 .footer-contact__tel {
@@ -113,12 +116,6 @@
   font-size: 12px;
   line-height: 1.86;
   color: #d41443;
-}
-
-.footer__social {
-  @media screen and(min-width: 768px) {
-    display: flex;
-  }
 }
 
 .footer__copyright {
