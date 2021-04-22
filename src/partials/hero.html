@@ -12,7 +12,23 @@
     <button type="button">Тут будет стрелка</button>
     <ul>
       <li>
-        <img src="" alt="девушка с мороженным" />
+        <picture>
+          <source
+            srcset="
+              images/desktop/slider-pic41-293x232.png    1x,
+              images/desktop/slider-pic41-293x232@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              images/tablet/slider-pic41-168x133.png    1x,
+              images/tablet/slider-pic41-168x133@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img src="images/desktop/slider-pic41-293x232.png" alt="девушка с мороженным" />
+        </picture>
       </li>
     </ul>
   </div>
