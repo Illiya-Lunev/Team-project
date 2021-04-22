@@ -1,0 +1,144 @@
+.contacts {
+  background: #fff5f6;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-list__item {
+  max-width: 220px;
+  padding: 43px 20px;
+
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.contact-list__agency-wraper {
+  display: inline-flex;
+  height: 16px;
+
+  align-items: center;
+
+  border-radius: 4px;
+}
+
+.cafe {
+  padding-left: 25px;
+  padding-right: 25px;
+  min-width: 80px;
+  background: #f0d1a5;
+}
+
+.foodstruck {
+  padding-left: 28px;
+  padding-right: 28px;
+  min-width: 130px;
+  background: #c2e297;
+}
+
+.contact-list__agency {
+  color: #ffffff;
+
+  text-transform: uppercase;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.contact-list__city {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+}
+
+.contact-list__description {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+}
+
+.contact-list__schedule {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+}
+
+.contact-list__time {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #ffa5ba;
+}
+
+.contact-list__tel,
+.contact-list__mail {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+}
+
+.contacts-button__map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 160px;
+  height: 44px;
+  padding: 15px 17px;
+
+  background: #d41342;
+  border: transparent;
+  border-radius: 22px;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  color: #ffffff;
+}
+
+.contacts-button__icon {
+  margin-left: 14px;
+  width: 8px;
+  height: 10px;
+}
+
+.contacts-button__franchise {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 160px;
+  height: 44px;
+  padding: 15px 17px;
+
+  background: #ffffff;
+  border: transparent;
+  border-radius: 22px;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  color: #d41443;
+}
