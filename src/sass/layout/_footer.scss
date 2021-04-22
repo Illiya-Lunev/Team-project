@@ -1,0 +1,65 @@
+.footer {
+  padding-top: 113px;
+  min-width: 480px;
+  background: map-get($map: $bgc, $key: secondary);
+  @media screen and(min-width: 768px) {
+    min-width: 768px;
+  }
+
+  @media screen and(min-width: 1280px) {
+    min-width: 1280px;
+  }
+}
+
+.footer__title {
+  display: inline-block;
+  max-width: 232px;
+  margin-bottom: 17px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1, 67;
+
+  color: map-get($map: $text, $key: before-title);
+}
+
+.footer__text {
+  max-width: 200px;
+  margin-bottom: 43px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  color: map-get($map: $text, $key: title);
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer__item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background: map-get($map: $bgc, $key: social);
+}
+
+.footer__icon {
+  fill: map-get($map: $text, $key: light-txt);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
