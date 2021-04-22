@@ -101,6 +101,9 @@ header{
 .header__buy-btn{
     border: none;
     width: 209px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto 20px;
     height: 44px;
     background: #FFFFFF;
