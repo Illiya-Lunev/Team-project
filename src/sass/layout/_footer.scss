@@ -78,6 +78,8 @@
   &:focus {
     background: #d41443;
   }
+  @media screen and(min-width: 768px) {
+  }
 }
 
 .footer__icon {
@@ -113,6 +115,12 @@
   color: #d41443;
 }
 
+.footer__social {
+  @media screen and(min-width: 768px) {
+    display: flex;
+  }
+}
+
 .footer__copyright {
   width: 150px;
   padding-top: 22px;
@@ -125,4 +133,8 @@
   text-align: center;
   margin: 0 auto;
   color: map-get($map: $text, $key: medium-txt);
+
+  @media screen and(min-width: 768px) {
+    width: 276px;
+  }
 }
