@@ -1,6 +1,7 @@
 .hero {
   padding-top: 83px;
   background-color: #ffb8ca;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -37,11 +38,11 @@
     text-transform: uppercase;
     color: #ffffff;
   }
-
+  /*
   .container {
     padding-right: 0px;
   }
-
+*/
   .hero__picture-elipce {
     position: absolute;
     left: 36px;
