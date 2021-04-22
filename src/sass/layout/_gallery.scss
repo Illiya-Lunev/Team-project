@@ -1,0 +1,26 @@
+.gallery-list__img {
+    width: 100%;
+    max-width: 364px;
+    margin: 0 auto;
+    
+}
+
+
+.gallery {
+    background: linear-gradient(180deg, rgba(255,245,246,1) 40%, rgba(255,255,255,1) 40%);
+}
+
+@media screen and (min-width: 768px) {
+    .gallery-list__img {
+        max-width: 768px;
+    }
+}   
+
+@media screen and (min-width: 1280px){
+    .gallery-list__img {
+        max-width: 1280px;
+    }
+
+
+
+}    
