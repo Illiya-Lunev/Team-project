@@ -1,0 +1,23 @@
+.swiper-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 350px;
+  margin-right: 0;
+  z-index: 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+}
+
+.reviews {
+  padding-top: 62px;
+  padding-bottom: 66px;
+}
+.reviews__img {
+  width: 85px;
+}
