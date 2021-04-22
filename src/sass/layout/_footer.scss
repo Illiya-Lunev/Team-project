@@ -14,6 +14,11 @@
 
 .footer__contanier {
   @media screen and(min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
   }
 }
 
@@ -32,7 +37,6 @@
     line-height: 1.15;
     letter-spacing: 0.04em;
     width: 340px;
-    margin-right: 0;
   }
 }
 
@@ -50,7 +54,6 @@
     line-height: 1.14;
     letter-spacing: 0.06em;
     width: 340px;
-    margin-right: 0;
   }
 }
 
