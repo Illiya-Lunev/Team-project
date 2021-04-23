@@ -1,9 +1,9 @@
-// -- Стили компоненты swiper Space Between
+// -- Стили +
 .swiper-container {
   display: flex;
   align-items: center;
   width: 100%;
-  //   min-height: 350px;
+  min-height: 350px;
   margin-right: 0;
   z-index: 0;
 }
@@ -51,10 +51,84 @@
 }
 
 // -- Стили самого слайдера
+
 .reviews {
   padding-top: 62px;
   padding-bottom: 66px;
+  background-color: map-get($bgc, 'primary');
 }
+
+.reviews__title {
+  visibility: hidden;
+}
+
 .reviews__img {
   width: 85px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 29px;
 }
+
+.reviews__text {
+  display: block;
+  text-align: center;
+  font-family: $primary-font;
+  @include font(12px, 30.6px, 0, 500);
+  color: map-get($text, 'dark-txt');
+
+  @media screen and (min-width: 768px) {
+    @include font(14px, 30.24px, 0.04, 500);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 29.76px, 0.04, 500);
+  }
+}
+
+.reviews__container-text {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(250, 250, 250, 0.4);
+  background-image: url(/images/desktop/element-54x34.png);
+
+  background-repeat: no-repeat;
+  max-width: 280px;
+  padding: 43px 66px 26px 57px;
+  background-position-x: 61px;
+  background-position-y: 28px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 620px;
+    padding: 47px 80px 34px 80px;
+    background-position-x: 30px;
+    background-position-y: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 926px;
+    padding: 45px 89px 49px 87px;
+
+    background-position-x: 50px;
+    background-position-y: 32px;
+  }
+}
+.reviews__text-line {
+}
+
+.reviews__icon-points {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews__name {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: $primary-font;
+  @include font(14px, 26.04px, 0, 500);
+  color: map-get($text, 'dark-txt');
+}
+// .points__doth {
+//   margin-left: auto;
+//   margin-right: auto;
+// }
