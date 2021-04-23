@@ -145,12 +145,11 @@
     width: 768px;
     height: 399px;
     padding-top: 94px;
-    padding-left: 34px;
-    padding-right: 34px;
     padding-bottom: 28px;
   }
 
   .hero__title {
+    display: block;
     font-family: $secondary-font;
     font-weight: 400;
     font-size: 34px;
@@ -170,13 +169,52 @@
     color: #ffffff;
   }
 
+  .hero__title,
+  .hero__title-white {
+    width: 162px;
+  }
+
   .hero__mobile-wrapper {
-    display: block;
+    display: flex;
+    flex-direction: column;
     //  position: absolute;
-    left: 20px;
-    top: 193px;
-    z-index: 5;
-    max-width: 162px;
+
+    // z-index: 5;
+  }
+
+  .hero__network-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero__main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero__network-list {
+    margin-bottom: 14px;
+  }
+
+  .hero__truck-amount,
+  .hero__network-amount {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.15;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+
+  .hero__network-decription,
+  .hero__food-decription {
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+    color: #ffffff;
   }
 
   .hero__picture-elipce {
