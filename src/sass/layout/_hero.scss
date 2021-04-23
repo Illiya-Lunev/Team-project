@@ -43,8 +43,12 @@
     position: absolute;
     left: 36px;
     top: 83px;
-    max-width: 346px;
+    min-width: 346px;
     z-index: 1;
+  }
+
+  .hero {
+    overflow: hidden;
   }
 
   .hero__picture-icecream {
@@ -120,5 +124,15 @@
     height: 24px;
     background: #fff;
     border-radius: 20px;
+  }
+
+  .hero__link-about:focus,
+  .hero__link-about:hover {
+    background-color: #ecebeb;
+  }
+
+  .hero__link-products:focus,
+  .hero__link-products:hover {
+    background-color: #c7133e;
   }
 }
