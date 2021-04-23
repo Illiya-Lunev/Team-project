@@ -193,9 +193,22 @@
     margin-bottom: 14px;
   }
 
+  .hero__truck-amount,
+  .hero__network-amount {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.15;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+
   .hero__network-item {
     position: relative;
     z-index: 2;
+    outline: 1px solid green;
   }
 
   .hero__network-amount::before {
@@ -209,18 +222,6 @@
     border-radius: 20px;
     background-color: #fff;
     z-index: 1;
-  }
-
-  .hero__truck-amount,
-  .hero__network-amount {
-    font-family: $secondary-font;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 1.15;
-    text-align: right;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #d41443;
   }
 
   .hero__network-decription,
@@ -346,6 +347,14 @@
     height: 18px;
     border-radius: 20px;
     border: none;
-    background-image: url(../images/arrow-right-18x18.png);
+    background-size: contain;
+    background-image: url('../images/arrow-right-18x18.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/arrow-right-18x18@2x.png');
+    }
   }
 }
