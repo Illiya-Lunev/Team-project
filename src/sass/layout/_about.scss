@@ -7,3 +7,50 @@
     color:rgba(212, 20, 67, 1);
     font-size: 34px;
 }
+
+.about__text {
+    font-size: 12px;
+    margin-bottom: 44px;
+    font-weight: bold;
+}
+
+.about__text--mod {
+    font-size: 12px;
+    color:rgba(144, 126, 130, 1);
+    margin-bottom: 16px;
+}
+
+.about__button {
+    background-color:rgba(255, 255, 255, 1);
+    color: rgba(212, 20, 67, 1);
+    font-weight: 700;
+    font-size:14px;
+    width: 176px;
+    height: 44px;
+    border: none;
+    text-align: center;
+    border-radius: 14px;
+    margin-bottom: 39px;
+}
+
+
+.about-list__img {
+    margin-bottom: 16px;
+    margin-top:38px;
+}
+
+.about-list__title {
+    font-size: 36px;
+    margin-bottom: 34px;
+    color:rgba(212, 20, 67, 1);
+    
+}
+
+.about-list {
+padding-bottom: 97px;
+}
+
+.about-list__text {
+    font-size: 12px;
+    font-weight: 700;
+}
