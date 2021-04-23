@@ -35,29 +35,32 @@
         </ul>
       </div>
     </div>
-
-    <picture class="hero__picture-milk">
-      <source
-        srcset="
-          images/desktop/slider-pic51-188x191.png    1x,
-          images/desktop/slider-pic51-188x191@2x.png 2x
-        "
-        media="(min-width: 1200px)"
-      />
-      <source
-        srcset="
-          images/tablet/slider-pic51-124x126.png    1x,
-          images/tablet/slider-pic51-124x126@2x.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <img src="images/tablet/slider-pic51-124x126.png" alt="milk" />
-    </picture>
-    <p class="hero__description">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et
-    </p>
-    <button class="hero__button-description" type="button">Тут будет стрелка</button>
+    <div class="hero__milk-wrapper">
+      <picture class="hero__picture-milk">
+        <source
+          srcset="
+            images/desktop/slider-pic51-188x191.png    1x,
+            images/desktop/slider-pic51-188x191@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            images/tablet/slider-pic51-124x126.png    1x,
+            images/tablet/slider-pic51-124x126@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img src="images/tablet/slider-pic51-124x126.png" alt="milk" />
+      </picture>
+      <div class="hero__milk-wrapper-decription">
+        <p class="hero__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button class="hero__button-description" type="button"></button>
+      </div>
+    </div>
 
     <picture class="hero__picture-elipce">
       <source
