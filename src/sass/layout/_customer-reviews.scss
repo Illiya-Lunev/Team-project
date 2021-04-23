@@ -51,11 +51,17 @@
 }
 
 // -- Стили самого слайдера
+
 .reviews {
   padding-top: 62px;
   padding-bottom: 66px;
   background-color: map-get($bgc, 'primary');
 }
+
+.reviews__title {
+  visibility: hidden;
+}
+
 .reviews__img {
   width: 85px;
   margin-left: auto;
@@ -69,6 +75,13 @@
   font-family: $primary-font;
   @include font(12px, 30.6px, 0, 500);
   color: map-get($text, 'dark-txt');
+
+  @media screen and (min-width: 768px) {
+    @include font(14px, 30.24px, 0.04, 500);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 29.76px, 0.04, 500);
+  }
 }
 
 .reviews__container-text {
@@ -97,6 +110,9 @@
     background-position-y: 32px;
   }
 }
+.reviews__text-line {
+}
+
 .reviews__icon-points {
   display: block;
   margin-left: auto;
