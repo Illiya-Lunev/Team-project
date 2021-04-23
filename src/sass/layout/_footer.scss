@@ -110,7 +110,7 @@
   }
 }
 .footer-contact__tel {
-  display: block;
+  display: inline-block;
   font-family: DM Sans;
 
   font-weight: 700;
@@ -121,6 +121,7 @@
 }
 
 .footer-contact__text {
+  display: inline-block;
   font-family: DM Sans;
 
   font-weight: 700;
