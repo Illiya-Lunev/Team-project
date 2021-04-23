@@ -142,10 +142,10 @@
 @media screen and (min-width: 768px) {
   .hero .container {
     position: relative;
-    width: 768px;
     height: 399px;
     padding-top: 94px;
     padding-bottom: 28px;
+    outline: 2px solid green;
   }
 
   .hero__title {
@@ -186,6 +186,7 @@
     display: flex;
     flex-direction: column;
   }
+
   .hero__main {
     display: flex;
     justify-content: space-between;
@@ -193,6 +194,22 @@
 
   .hero__network-list {
     margin-bottom: 14px;
+  }
+
+  .hero__network-item {
+    position: relative;
+  }
+
+  .hero__network-amount::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    top: -3px;
+    right: -6px;
+    border-radius: 20px;
+    background-color: #fff;
   }
 
   .hero__truck-amount,
@@ -218,12 +235,11 @@
   }
 
   .hero__picture-elipce {
-    display: none;
     position: absolute;
-    left: 36px;
-    top: 83px;
-    min-width: 346px;
-    // z-index: 1;
+    left: 307px;
+    top: 36px;
+    //min-width: 307px;
+    z-index: 1;
   }
 
   .hero__link-about,
@@ -282,5 +298,35 @@
   .hero__link-products:focus,
   .hero__link-products:hover {
     background-color: #c7133e;
+  }
+
+  .hero__picture-girl {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    z-index: 3;
+  }
+
+  .hero__picture-icecream {
+    position: absolute;
+    right: 247px;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .hero__picture-milk {
+    position: absolute;
+    left: 20px;
+    bottom: 28px;
+    z-index: 2;
+  }
+
+  .hero__description {
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    color: #ffffff;
+    width: 114px;
   }
 }
