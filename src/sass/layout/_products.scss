@@ -1,12 +1,21 @@
 .products {
-  padding: 121px 0 96px;
+  padding: 122px 0 96px;
   text-align: center;
-  background-color: #fff;
+  background-color: map-get($map: $bgc, $key: primary);
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 112px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 126px 0 120px;
+  }
 
   &__slogan {
     @include font(18px, 21px, 0.03em);
     text-transform: uppercase;
     margin-bottom: 15px;
+    color: map-get($map: $text, $key: before-title);
 
     @media screen and (min-width: 768px) {
       @include font(26px, 30px, 0.03em);
@@ -21,6 +30,7 @@
     @include font(34px, 39px, 0.04em);
     text-transform: uppercase;
     margin-bottom: 144px;
+    color: map-get($map: $text, $key: title);
 
     @media screen and (min-width: 768px) {
       @include font(48px, 55px, 0.04em);
@@ -48,20 +58,117 @@
   }
 
   &__item {
-    &:not(:last-child) {
-      margin-bottom: 130px;
+    padding: 160px 40px 40px;
+    color: map-get($map: $text, $key: light-txt);
+    border-radius: 24px;
+    position: relative;
+
+    @media screen and (max-width: 767px) {
+      margin: 0 auto;
+      max-width: 280px;
+    }
+
+    &:nth-child(3n + 1) {
+      background-color: map-get($map: $bgc, $key: first-product);
+    }
+
+    &:nth-child(3n + 2) {
+      background-color: map-get($map: $bgc, $key: second-product);
+    }
+
+    &:nth-child(3n + 3) {
+      background-color: map-get($map: $bgc, $key: third-product);
+    }
+
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 130px;
+      }
     }
 
     @media screen and (min-width: 768px) {
+      padding: 152px 28px 40px;
       margin-top: 20px;
       margin-left: 20px;
       flex-basis: calc(100% / 3 - 20px);
     }
 
     @media screen and (min-width: 1280px) {
+      padding: 162px 44px 50px;
       margin-top: 30px;
       margin-left: 30px;
       flex-basis: calc(100% / 3 - 30px);
+    }
+
+    &:nth-child(n + 1) {
+      &::before {
+        $w-img: 249px;
+        content: ' ';
+        display: block;
+        width: $w-img;
+        height: 252px;
+        position: absolute;
+        top: -113px;
+        right: calc((100% - #{$w-img}) / 2);
+
+        @media screen and (min-width: 768px) {
+          $w-img: 220px;
+          width: $w-img;
+          height: 226px;
+          top: -104px;
+          right: calc((100% - #{$w-img}) / 2);
+        }
+
+        @media screen and (min-width: 1280px) {
+          $w-img: 335px;
+          width: $w-img;
+          height: 335px;
+          top: -210px;
+          right: calc((100% - #{$w-img}) / 2);
+        }
+      }
+    }
+
+    &:nth-child(1) {
+      &::before {
+        background-image: url('/images/mobile/home-pic1-249x252.png');
+
+        @media screen and (min-width: 768px) {
+          background-image: url('/images/tablet/home-pic1-220x226.png');
+        }
+
+        @media screen and (min-width: 1280px) {
+          background-image: url('/images/desktop/home-pic1-335x335.png');
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        background-image: url('/images/mobile/home-pic2-249x252@2x.png');
+
+        @media screen and (min-width: 768px) {
+          background-image: url('/images/tablet/home-pic2-220x233.png');
+        }
+
+        @media screen and (min-width: 1280px) {
+          background-image: url('/images/desktop/home-pic2-337x335.png');
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        background-image: url('/images/mobile/home-pic3-249x252.png');
+
+        @media screen and (min-width: 768px) {
+          background-image: url('/images/tablet/home-pic3-220x224.png');
+        }
+
+        @media screen and (min-width: 1280px) {
+          background-image: url('/images/desktop/home-pic3-335x335.png');
+        }
+      }
     }
   }
 
@@ -71,11 +178,27 @@
 
     @media screen and (min-width: 1280px) {
       @include font(30px, 34px, 0.04em);
-      // margin-bottom: 70px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      margin: 30px auto;
+      background-color: map-get($map: $bgc, $key: primary);
+      box-shadow: 10px 0 map-get($map: $bgc, $key: primary),
+        -10px 0 map-get($map: $bgc, $key: primary);
+
+      @media screen and (min-width: 1280px) {
+        margin: 32px auto;
+      }
     }
   }
 
   &__description {
+    font-family: $primary-font;
     @include font(14px, 21px, 0.04em, 700);
     margin-bottom: 30px;
 
@@ -91,24 +214,8 @@
   }
 
   &__btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
     border: none;
-    background-color: grey;
-  }
-
-  &__box {
-    padding: 160px 40px 40px;
-    border-radius: 24px;
-    background-color: aqua;
-
-    @media screen and (min-width: 768px) {
-      padding: 152px 10px 40px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      padding: 162px 44px 50px;
-    }
+    background-color: transparent;
+    cursor: pointer;
   }
 }
