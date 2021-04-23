@@ -36,8 +36,7 @@ header{
     z-index: 1000;
     top: 0;
     left: 50%;
-    overflow-y: scroll;
-    max-width: 480px;
+    overflow-y: auto;
     width: 100vw;
     height: 100vh;
     background-color: map-get($map: $bgc, $key: menu);
@@ -47,17 +46,20 @@ header{
 
     .navigation-list{
         display: block;
+        margin-left: 0;
+        width: 100%;
+        @include font(14px, 18px, 0, 700);
         .navigation-list__item{
             border-top: 1px solid map-get($map: $decor, $key: menu-line);
+            padding: 11px 20px;
+            &:not(:last-child){
+                margin-right: 0;
+            }
             &:last-child{
                 border-bottom: 1px solid map-get($map: $decor, $key: menu-line);
             }
         }
     }
-}
-
-.navigation-list{
-    @include font(14px, 18px, 0, 700);
 }
 
 .navigation-list__item{
@@ -94,14 +96,6 @@ header{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.mobile-menu{
-    .header__buy-btn{
-        display: block;
-        margin: 0 auto 20px;
-    }
-}
-
 .header__buy-btn{
     border: none;
     width: 209px;
@@ -126,6 +120,11 @@ header{
     .menu-icon{
         margin-left: 12px;
     }
+
+    .mobile-menu &{
+        display: block;
+        margin: 0 auto 20px;
+    }
 }
 
 
@@ -144,6 +143,22 @@ header{
     .header__buy-btn{
         width: 160px;
         margin: 0 0 0 30px;
+    }
+
+    .mobile-menu{
+        max-width: 254px;
+        height: 41vh;
+        left: initial;
+        right: -100%;
+        transform: unset;
+        transition: right 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        min-height: 390px;
+        height: unset;
+    }
+
+    .is-open{
+        right: 0;
+        transform: unset;
     }
 
 }
