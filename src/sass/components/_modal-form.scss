@@ -101,22 +101,16 @@
 		margin-right: 8px;
 		width: 22px;
 		height: 16px;
-		border: 2px solid #ffffff;
+		border: 1px solid #ffffff;
 		border-radius: 2px;
 		cursor: pointer;
 		transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 		.user-terms-checkbox:checked + &{
-			background: var(--accent-color);
-			border: none;
-			// background-image: url(../images/checkbox.svg);
+			background: transparent;
+			background-image: url(../images/checkbox.svg);
 			background-position: center;
 			background-repeat: no-repeat;
-		}
-
-		.user-terms-checkbox:focus + &{
-			box-shadow: 0 0 0 1px var(--accent-color);
-			border: none;
 		}
 	}
 }
