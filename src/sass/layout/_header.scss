@@ -96,7 +96,7 @@ header{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__buy-btn{
+.header__btn{
     border: none;
     width: 209px;
     display: flex;
@@ -129,7 +129,7 @@ header{
 
 
 @media screen and (max-width: 767px) {
-    .header__buy-btn{
+    .header__btn{
         display: none;
     }
 }
@@ -140,20 +140,19 @@ header{
         top: 38px;
     }
 
-    .header__buy-btn{
+    .header__btn{
         width: 160px;
         margin: 0 0 0 30px;
     }
 
     .mobile-menu{
         max-width: 254px;
-        height: 41vh;
+        height: 100vh;
         left: initial;
         right: -100%;
         transform: unset;
         transition: right 250ms cubic-bezier(0.4, 0, 0.2, 1);
         min-height: 390px;
-        height: unset;
     }
 
     .is-open{
@@ -200,7 +199,7 @@ header{
         display: none;
     }
 
-    .header__buy-btn{
+    .header__btn{
         margin-left: auto;
     }
 }
