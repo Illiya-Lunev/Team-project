@@ -3,21 +3,32 @@
 }
 
 
-.about-header {
+.about__header {
     color:rgba(212, 20, 67, 1);
     font-size: 34px;
+    text-align: center;
+    font-weight: 900;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
 
 .about__text {
     font-size: 12px;
     margin-bottom: 44px;
     font-weight: bold;
+    margin-left:16px;
+    margin-right: 16px;
+    line-height: 18px;
 }
 
 .about__text--mod {
     font-size: 12px;
     color:rgba(144, 126, 130, 1);
     margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    line-height: 18px;
 }
 
 .about__button {
@@ -31,6 +42,8 @@
     text-align: center;
     border-radius: 14px;
     margin-bottom: 39px;
+    margin-left:16px;
+    margin-right: 56px;
 }
 
 
@@ -40,8 +53,9 @@
 }
 
 .about-list__title {
+    
     font-size: 36px;
-    margin-bottom: 34px;
+    margin-bottom: 16px;
     color:rgba(212, 20, 67, 1);
     
 }
@@ -53,4 +67,14 @@ padding-bottom: 97px;
 .about-list__text {
     font-size: 12px;
     font-weight: 700;
+    line-height: 20px;
+}
+
+
+.about__title {
+    font-size: 18px;
+    color:rgba(255, 165, 186, 1);
+    text-align: center;
+    font-weight: 800;
+    
 }
