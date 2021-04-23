@@ -1,6 +1,13 @@
 .advantages {
   padding-bottom: 97px;
-  // нужно узнать падинги соседних секций, а потом тут финализировать
+  background-color: map-get($bgc, 'secondary');
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 140px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 139px;
+  }
 }
 
 .advantages__list {
