@@ -1,38 +1,67 @@
 <section class="hero">
   <div class="container">
-    <div class="hero__mobile-wrapper">
-      <h1 class="hero__title"><span class="hero__title-white">Ice cream made with</span>passion</h1>
-      <ul class="hero__list list">
-        <li class="hero__list-item list">
-          <a class="hero__link-products link-style" href="#products">Products</a>
-        </li>
-        <li class="hero__list-item list">
-          <a class="hero__link-about link-style" href="#made">How it's made?</a>
-        </li>
-      </ul>
+    <div class="hero__main">
+      <div class="hero__mobile-wrapper">
+        <h1 class="hero__title">
+          <span class="hero__title-white">Ice cream made with </span>passion
+        </h1>
+        <ul class="hero__list list">
+          <li class="hero__list-item list">
+            <a class="hero__link-products link-style" href="#products">Products</a>
+          </li>
+          <li class="hero__list-item list">
+            <a class="hero__link-about link-style" href="#made">How it's made?</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero__network-wrapper">
+        <ul class="hero__network-list list">
+          <li class="hero__network-item">
+            <p class="hero__network-amount">16</p>
+          </li>
+          <li class="hero__network-item">
+            <p class="hero__network-decription">cafes</p>
+          </li>
+        </ul>
+
+        <ul class="hero__truck-list list">
+          <li class="hero__truck-item">
+            <p class="hero__truck-amount">23</p>
+          </li>
+          <li class="hero__truck-item">
+            <p class="hero__food-decription">food trucks</p>
+          </li>
+        </ul>
+      </div>
     </div>
-    <p class="hero__description">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et
-    </p>
-    <button class="hero__button-description" type="button">Тут будет стрелка</button>
-    <picture class="hero__picture-milk">
-      <source
-        srcset="
-          images/desktop/slider-pic51-188x191.png    1x,
-          images/desktop/slider-pic51-188x191@2x.png 2x
-        "
-        media="(min-width: 1200px)"
-      />
-      <source
-        srcset="
-          images/tablet/slider-pic51-124x126.png    1x,
-          images/tablet/slider-pic51-124x126@2x.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <img src="images/tablet/slider-pic51-124x126.png" alt="milk" />
-    </picture>
+    <div class="hero__milk-wrapper">
+      <picture class="hero__picture-milk">
+        <source
+          srcset="
+            images/desktop/slider-pic51-188x191.png    1x,
+            images/desktop/slider-pic51-188x191@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            images/tablet/slider-pic51-124x126.png    1x,
+            images/tablet/slider-pic51-124x126@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img src="images/tablet/slider-pic51-124x126.png" alt="milk" />
+      </picture>
+      <div class="hero__milk-wrapper-decription">
+        <p class="hero__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button class="hero__button-description" type="button"></button>
+      </div>
+    </div>
+
     <picture class="hero__picture-elipce">
       <source
         srcset="
