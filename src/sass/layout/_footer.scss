@@ -13,7 +13,7 @@
 }
 
 .footer-contanier {
-  border-bottom: 1px solid #e1e1e1;
+  // border-bottom: 1px solid #e1e1e1;
 
   @media screen and(min-width: 768px) {
     display: flex;
@@ -148,7 +148,10 @@
   }
 }
 
-.footer__copyright {
+.footer-copyright {
+  border-top: 1px solid #e1e1e1;
+}
+.footer-copyright__text {
   position: relative;
   width: 150px;
   padding-top: 22px;
@@ -164,5 +167,11 @@
 
   @media screen and(min-width: 768px) {
     width: 276px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  @media screen and(min-width:1280px) {
+    padding-top: 9px;
+    padding-bottom: 9px;
   }
 }
