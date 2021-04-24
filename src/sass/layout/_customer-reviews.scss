@@ -73,17 +73,34 @@
   display: block;
   text-align: center;
   font-family: $primary-font;
-  @include font(12px, 30.6px, 0, 500);
+  @include font(12px, 31px, 0em, 500);
   color: map-get($text, 'dark-txt');
 
   @media screen and (min-width: 768px) {
-    @include font(14px, 30.24px, 0.04, 500);
+    @include font(14px, 30px, 0.04em, 500);
   }
   @media screen and (min-width: 1280px) {
-    @include font(16px, 29.76px, 0.04, 500);
+    @include font(16px, 30px, 0.04em, 500);
   }
 }
+.reviews__text-line {
+  height: 100%;
+  background-image: repeating-linear-gradient(
+    rgba(100%, 100%, 100%, 0%) 0px,
+    rgba(100%, 100%, 100%, 0%) 29px,
+    // teal 30px
+    map-get($decor, 'line') 30px
+  );
 
+  @media screen and (min-width: 768px) {
+    background-image: repeating-linear-gradient(
+      rgba(100%, 100%, 100%, 0%) 0px,
+      rgba(100%, 100%, 100%, 0%) 28px,
+      // teal 29px
+      map-get($decor, 'line') 29px
+    );
+  }
+}
 .reviews__container-text {
   margin-left: auto;
   margin-right: auto;
@@ -99,8 +116,8 @@
   @media screen and (min-width: 768px) {
     max-width: 620px;
     padding: 47px 80px 34px 80px;
-    background-position-x: 30px;
-    background-position-y: 40px;
+    background-position-x: 41px;
+    background-position-y: 30px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 926px;
@@ -109,8 +126,6 @@
     background-position-x: 50px;
     background-position-y: 32px;
   }
-}
-.reviews__text-line {
 }
 
 .reviews__icon-points {
@@ -125,7 +140,7 @@
   margin-bottom: 30px;
   text-align: center;
   font-family: $primary-font;
-  @include font(14px, 26.04px, 0, 500);
+  @include font(14px, 26.04px, 0em, 500);
   color: map-get($text, 'dark-txt');
 }
 // .points__doth {
