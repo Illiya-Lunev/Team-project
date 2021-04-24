@@ -102,7 +102,7 @@
   background-image: repeating-linear-gradient(
     rgba(100%, 100%, 100%, 0%) 0px,
     rgba(100%, 100%, 100%, 0%) 29px,
-    // teal 30px
+    map-get($decor, 'line') 29px,
     map-get($decor, 'line') 30px
   );
 
@@ -110,7 +110,7 @@
     background-image: repeating-linear-gradient(
       rgba(100%, 100%, 100%, 0%) 0px,
       rgba(100%, 100%, 100%, 0%) 28px,
-      // teal 29px
+      map-get($decor, 'line') 28px,
       map-get($decor, 'line') 29px
     );
   }
