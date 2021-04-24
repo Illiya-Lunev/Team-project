@@ -120,6 +120,13 @@
   margin-right: auto;
   background-color: rgba(250, 250, 250, 0.4);
   background-image: url(/images/desktop/element-54x34.png);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(/images/desktop/element-54x34@2x.png);
+  }
 
   background-repeat: no-repeat;
   max-width: 280px;
