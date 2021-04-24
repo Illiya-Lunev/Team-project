@@ -360,6 +360,11 @@
       (min-resolution: 2dppx) {
       background-image: url('../images/arrow-right-18x18@2x.png');
     }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
   }
 }
 
@@ -440,8 +445,8 @@
     display: inline-block;
     width: 30px;
     height: 30px;
-    top: -3px;
-    right: -6px;
+    top: -8px;
+    right: -10px;
     border-radius: 20px;
     background-color: #fff;
     z-index: -1;
@@ -453,8 +458,8 @@
     display: inline-block;
     width: 30px;
     height: 30px;
-    top: -3px;
-    right: -6px;
+    top: -8px;
+    right: -10px;
     border-radius: 20px;
     background-color: #fff;
     z-index: -1;
@@ -582,6 +587,11 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../images/arrow-right-18x18@2x.png');
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
     }
   }
 }
