@@ -214,25 +214,4 @@ img {
     margin-top: 45px;
   }
 }
-
-.gallery-list__img {
-  width: 100%;
-}
-
-.gallery {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff5f6), color-stop(40%, white));
-  background: linear-gradient(180deg, #fff5f6 40%, white 40%);
-}
-
-@media screen and (min-width: 768px) {
-  .gallery-list__img {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .gallery-list__img {
-    max-width: 1280px;
-  }
-}
 /*# sourceMappingURL=main.css.map */
