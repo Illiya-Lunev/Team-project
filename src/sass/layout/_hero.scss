@@ -363,3 +363,227 @@
     }
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .hero .container {
+    position: relative;
+    height: 665px;
+    padding-top: 171px;
+    padding-bottom: 45px;
+  }
+
+  .hero__title {
+    display: block;
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 0.9;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+
+  .hero__title-white {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .hero__title,
+  .hero__title-white {
+    width: 277px;
+  }
+
+  .hero__mobile-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__network-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+  }
+
+  .hero__network-list {
+    margin-bottom: 15px;
+  }
+
+  .hero__truck-amount,
+  .hero__network-amount {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 1.16;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+
+  .hero__truck-item,
+  .hero__network-item {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero__network-amount::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    top: -3px;
+    right: -6px;
+    border-radius: 20px;
+    background-color: #fff;
+    z-index: -1;
+  }
+
+  .hero__truck-amount::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    top: -3px;
+    right: -6px;
+    border-radius: 20px;
+    background-color: #fff;
+    z-index: -1;
+  }
+
+  .hero__network-decription,
+  .hero__food-decription {
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: right;
+    color: #ffffff;
+  }
+
+  .hero__picture-elipce {
+    position: absolute;
+    left: 370px;
+    top: 52px;
+    z-index: 1;
+  }
+
+  .hero__link-about,
+  .hero__link-products {
+    display: inline-block;
+    margin-top: 25px;
+  }
+
+  .hero__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hero__list-item:last-child {
+    margin-left: 15px;
+  }
+
+  .hero__link-products {
+    display: flex;
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    min-width: 104px;
+    height: 40px;
+
+    background: #d41443;
+    border-radius: 20px;
+  }
+
+  .hero__link-about {
+    display: flex;
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    align-items: center;
+    justify-content: center;
+    color: #d41443;
+
+    min-width: 138px;
+    height: 40px;
+    background: #fff;
+    border-radius: 20px;
+  }
+
+  .hero__link-about:focus,
+  .hero__link-about:hover {
+    background-color: #ecebeb;
+  }
+
+  .hero__link-products:focus,
+  .hero__link-products:hover {
+    background-color: #c7133e;
+  }
+
+  .hero__picture-girl {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    z-index: 3;
+  }
+
+  .hero__picture-icecream {
+    position: absolute;
+    right: 353px;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .hero__description {
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #ffffff;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .hero__milk-wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .hero__milk-wrapper-decription {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .hero__button-description {
+    width: 26px;
+    height: 26px;
+    border-radius: 20px;
+    border: none;
+    background-size: contain;
+    background-image: url('../images/arrow-right-18x18.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/arrow-right-18x18@2x.png');
+    }
+  }
+}
