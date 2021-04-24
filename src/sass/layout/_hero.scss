@@ -205,10 +205,10 @@
     color: #d41443;
   }
 
+  .hero__truck-item,
   .hero__network-item {
     position: relative;
     z-index: 2;
-    outline: 1px solid green;
   }
 
   .hero__network-amount::before {
@@ -221,7 +221,20 @@
     right: -6px;
     border-radius: 20px;
     background-color: #fff;
-    z-index: 1;
+    z-index: -1;
+  }
+
+  .hero__truck-amount::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    top: -3px;
+    right: -6px;
+    border-radius: 20px;
+    background-color: #fff;
+    z-index: -1;
   }
 
   .hero__network-decription,
@@ -236,9 +249,8 @@
 
   .hero__picture-elipce {
     position: absolute;
-    left: 307px;
+    left: 293px;
     top: 36px;
-    //min-width: 307px;
     z-index: 1;
   }
 
@@ -309,18 +321,11 @@
 
   .hero__picture-icecream {
     position: absolute;
-    right: 247px;
+    right: 230px;
     bottom: 0;
     z-index: 2;
   }
-  /*
-  .hero__picture-milk {
-    position: absolute;
-    left: 20px;
-    bottom: 28px;
-    z-index: 2;
-  }
-*/
+
   .hero__description {
     font-family: $primary-font;
     font-weight: 400;
