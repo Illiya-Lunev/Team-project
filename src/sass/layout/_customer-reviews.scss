@@ -53,9 +53,17 @@
 // -- Стили самого слайдера
 
 .reviews {
-  padding-top: 62px;
-  padding-bottom: 66px;
+  padding-top: 40px;
+  padding-bottom: 43px;
   background-color: map-get($bgc, 'primary');
+  @media screen and (min-width: 768px) {
+    padding-top: 61px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 62px;
+    padding-bottom: 66px;
+  }
 }
 
 .reviews__title {
@@ -67,29 +75,59 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 29px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
 }
 
 .reviews__text {
   display: block;
   text-align: center;
   font-family: $primary-font;
-  @include font(12px, 30.6px, 0, 500);
+  @include font(12px, 31px, 0em, 500);
   color: map-get($text, 'dark-txt');
 
   @media screen and (min-width: 768px) {
-    @include font(14px, 30.24px, 0.04, 500);
+    @include font(14px, 30px, 0.04em, 500);
   }
   @media screen and (min-width: 1280px) {
-    @include font(16px, 29.76px, 0.04, 500);
+    @include font(16px, 30px, 0.04em, 500);
   }
 }
+.reviews__text-line {
+  height: 100%;
+  background-image: repeating-linear-gradient(
+    rgba(100%, 100%, 100%, 0%) 0px,
+    rgba(100%, 100%, 100%, 0%) 29px,
+    map-get($decor, 'line') 29px,
+    map-get($decor, 'line') 30px
+  );
 
+  @media screen and (min-width: 768px) {
+    background-image: repeating-linear-gradient(
+      rgba(100%, 100%, 100%, 0%) 0px,
+      rgba(100%, 100%, 100%, 0%) 28px,
+      map-get($decor, 'line') 28px,
+      map-get($decor, 'line') 29px
+    );
+  }
+}
 .reviews__container-text {
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(250, 250, 250, 0.4);
   background-image: url(/images/desktop/element-54x34.png);
-
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(/images/desktop/element-54x34@2x.png);
+    background-size: 54px;
+  }
   background-repeat: no-repeat;
   max-width: 280px;
   padding: 43px 66px 26px 57px;
@@ -99,8 +137,8 @@
   @media screen and (min-width: 768px) {
     max-width: 620px;
     padding: 47px 80px 34px 80px;
-    background-position-x: 30px;
-    background-position-y: 40px;
+    background-position-x: 41px;
+    background-position-y: 30px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 926px;
@@ -109,8 +147,6 @@
     background-position-x: 50px;
     background-position-y: 32px;
   }
-}
-.reviews__text-line {
 }
 
 .reviews__icon-points {
@@ -125,10 +161,16 @@
   margin-bottom: 30px;
   text-align: center;
   font-family: $primary-font;
-  @include font(14px, 26.04px, 0, 500);
+  @include font(14px, 26px, 0em, 500);
   color: map-get($text, 'dark-txt');
+  @media screen and (min-width: 768px) {
+    @include font(16px, 30px, 0em, 500);
+    margin-top: 14px;
+    margin-bottom: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(20px, 37px, 0em, 500);
+    margin-top: 15px;
+    margin-bottom: 35px;
+  }
 }
-// .points__doth {
-//   margin-left: auto;
-//   margin-right: auto;
-// }
