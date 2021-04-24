@@ -3,6 +3,45 @@
   margin: 0 auto;
 }
 
+.hero__picture-milk:focus,
+.hero__picture-milk:hover {
+  transform: scale(1.1);
+}
+
+.hero__picture-icecream:focus,
+.hero__picture-icecream:hover {
+  transform: scale(1.1);
+}
+
+.hero__picture-girl:focus,
+.hero__picture-girl:hover {
+  transform: scale(1.1);
+}
+
+.hero__button-description:focus,
+.hero__button-description:hover {
+  transform: scale(1.1);
+}
+
+.hero__network-amount,
+.hero__network-item:focus,
+.hero__network-amount,
+.hero__network-item:hover {
+  transform: scale(1.1);
+}
+
+.hero__truck-amount,
+.hero__truck-item:focus,
+.hero__truck-amount,
+.hero__truck-item:hover {
+  transform: scale(1.1);
+}
+
+.hero__title:hover,
+.hero__title:focus {
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: 767px) {
   .hero__picture-girl,
   .hero__picture-milk,
@@ -320,8 +359,6 @@
     right: 20px;
     bottom: 0;
     z-index: 3;
-    animation-delay: 2000ms;
-    animation-duration: 2000ms;
   }
 
   .hero__picture-icecream {
@@ -552,8 +589,6 @@
     right: 20px;
     bottom: 0;
     z-index: 3;
-    animation-delay: 2000ms;
-    animation-duration: 2000ms;
   }
 
   .hero__picture-icecream {
