@@ -197,25 +197,75 @@
     }
   }
 
-  &__description {
+  &__description,
+  &__more {
     font-family: $primary-font;
     @include font(14px, 21px, 0.04em, 700);
-    margin-bottom: 30px;
+    transition: opacity 250ms linear;
 
     @media screen and (min-width: 768px) {
       @include font(14px, 25px, 0.04em, 700);
-      margin-bottom: 40px;
     }
 
     @media screen and (min-width: 1280px) {
       @include font(16px, 28px, 0.04em, 700);
-      margin-bottom: 62px;
+    }
+
+    .products__more.is-show ~ & {
+      opacity: 0;
+      pointer-events: none;
     }
   }
 
   &__btn {
+    padding: 0;
     border: none;
     background-color: transparent;
     cursor: pointer;
+    transition: transform 250ms linear;
+    margin-top: 30px;
+    transform: rotate(0deg);
+
+    @media screen and (min-width: 768px) {
+      margin-top: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-top: 62px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      transform: scale(1.2);
+    }
+  }
+
+  &__wrap {
+    position: relative;
+    padding-bottom: 10px;
+    width: 100%;
+    // height: 100%;
+    overflow: hidden;
+  }
+
+  &__more {
+    position: absolute;
+    color: map-get($map: $text, $key: title);
+    top: 0;
+    padding: 10px;
+    overflow: auto;
+    height: 70%;
+    width: 100%;
+    transform: translateX(-100%);
+
+    transition: transform 250ms linear;
+  }
+
+  &__more.is-show {
+    transform: translateX(0);
+
+    & ~ .products__btn {
+      transform: rotate(-180deg);
+    }
   }
 }
