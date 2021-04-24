@@ -103,20 +103,37 @@ img {
   font-family: DM Sans;
 }
 
-.about__button {
-  background-color: white;
+/*.about__button {
+    
+    
+    font-weight: 700;
+    font-size:14px;
+    width: 176px;
+    height: 44px;
+    border: none;
+    text-align: center;
+    border-radius: 14px;
+    margin-bottom: 39px;
+    margin-left:16px;
+    margin-right: 56px;
+    font-family: DM Sans;
+}
+*/
+.about__link {
   color: #d41443;
+  display: block;
+  background-color: white;
+  font-family: DM Sans;
+  padding: 14px;
+  border-radius: 14px;
   font-weight: 700;
   font-size: 14px;
-  width: 176px;
-  height: 44px;
-  border: none;
-  text-align: center;
-  border-radius: 14px;
+  margin-top: 45px;
   margin-bottom: 39px;
   margin-left: 16px;
   margin-right: 56px;
-  font-family: DM Sans;
+  width: 176px;
+  height: 44px;
 }
 
 .about__title {
@@ -125,6 +142,7 @@ img {
   text-align: center;
   font-weight: 900;
   font-family: Titan One,cursive;
+  margin-bottom: 15px;
 }
 
 .flex-container {
@@ -182,7 +200,7 @@ img {
     width: 340px;
     line-height: 1.76;
   }
-  .about__button {
+  .about__link {
     font-size: 16px;
     margin-top: 62px;
   }
@@ -208,7 +226,7 @@ img {
   .about__wrap {
     margin-left: 74px;
   }
-  .about__button {
+  .about__link {
     margin-top: 45px;
   }
 }
