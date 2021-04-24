@@ -1,4 +1,5 @@
 .about {
+    padding-top:125px;
     background-color:rgba(255, 245, 246, 1);
 }
 
@@ -7,19 +8,22 @@
     color:rgba(212, 20, 67, 1);
     font-size: 34px;
     text-align: center;
-    font-weight: 900;
+    font-weight: 1000;
     margin-left: 10px;
     margin-right: 10px;
+    font-family: Titan One,cursive;
 
 }
 
 .about__text {
     font-size: 12px;
     margin-bottom: 44px;
-    font-weight: bold;
+    font-weight: 600;
     margin-left:16px;
     margin-right: 16px;
-    line-height: 18px;
+    line-height: 1.62;
+    width: 220px;
+    font-family: DM Sans;
 }
 
 .about__text--mod {
@@ -28,7 +32,9 @@
     margin-bottom: 16px;
     margin-left: 16px;
     margin-right: 16px;
-    line-height: 18px;
+    line-height: 1.62;
+    width: 220px;
+    font-family: DM Sans;
 }
 
 .about__button {
@@ -44,37 +50,104 @@
     margin-bottom: 39px;
     margin-left:16px;
     margin-right: 56px;
+    font-family: DM Sans;
 }
-
-
-.about-list__img {
-    margin-bottom: 16px;
-    margin-top:38px;
-}
-
-.about-list__title {
-    
-    font-size: 36px;
-    margin-bottom: 16px;
-    color:rgba(212, 20, 67, 1);
-    
-}
-
-.about-list {
-padding-bottom: 97px;
-}
-
-.about-list__text {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 20px;
-}
-
 
 .about__title {
     font-size: 18px;
     color:rgba(255, 165, 186, 1);
     text-align: center;
-    font-weight: 800;
+    font-weight: 900;
+    font-family: Titan One,cursive;
     
 }
+
+
+/*.about-content__img{
+    background-image: url(/images/mobile/sectionbg11-320x133.png);
+    background-size: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+*/
+
+.flex-container {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container {
+        display: block;
+    }
+}   
+
+
+@media screen and (min-width: 767px) {
+    .about__wrap {
+        margin-top:56px;
+    }
+
+    .about__title {
+        font-size:26px;
+        margin-bottom: 16px;
+    }
+
+    .about__header{
+       font-size: 48px;
+       margin-bottom: 50px;
+    }
+    
+    .about__text{
+      font-size: 14px;
+      width: 340px;
+      line-height: 1.76;
+    }
+
+    .about__text--mod {
+      font-size: 14px;
+      width: 340px;
+      line-height: 1.76;
+
+    }
+   
+    .about__button {
+    font-size: 16px;
+    margin-top: 62px;
+    }
+}   
+
+@media screen and (min-width: 1280px){
+    
+
+    .about__title {
+        font-size: 30px;
+    }
+
+    .about__header{
+        font-size: 58px;
+        
+     }
+    
+
+     .about__text{
+        font-size: 16px;
+        width: 463px;
+        line-height: 28px;
+      }
+  
+      .about__text--mod {
+        font-size: 16px;
+        width: 463px;
+        line-height: 28px;
+  
+      }
+
+      .about__wrap {
+        margin-left: 74px;
+      }
+
+      .about__button {
+        margin-top: 45px;
+      }
+}    
