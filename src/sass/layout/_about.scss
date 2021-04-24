@@ -22,7 +22,7 @@
     margin-left:16px;
     margin-right: 16px;
     line-height: 1.62;
-    
+    text-align: left;
     font-family: DM Sans;
 }
 
@@ -33,7 +33,7 @@
     margin-left: 16px;
     margin-right: 16px;
     line-height: 1.62;
-    
+    text-align: left;
     font-family: DM Sans;
 }
 
@@ -63,17 +63,30 @@
 }
 
 
-/*.about-content__img{
-    background-image: url(/images/mobile/sectionbg11-320x133.png);
-    background-size: 100%;
-    position: absolute;
-    width: 100%;
-    left: 0;
-}
-*/
 
 .flex-container {
     display: flex;
+}
+
+.about {
+    background-color: #fff5f6;
+    text-align: center;
+    background-image: url(/images/mobile/sectionbg11-320x133.png);
+    background-size: 100%;
+    background-position-y: 80%;
+    background-repeat: no-repeat;
+}
+
+@media not all, screen and (min-width: 320px) and (min-resolution: 2dppx), screen and (min-width: 320px) and (min-resolution: 192dpi){
+.about {
+    background-image: url(/images/mobile/sectionbg11-320x133.png);
+}
+}
+
+@media (min-width: 320px) {
+.about {
+    background-image: url(/images/mobile/sectionbg11-320x133.png);
+}
 }
 
 @media screen and (max-width: 768px) {
