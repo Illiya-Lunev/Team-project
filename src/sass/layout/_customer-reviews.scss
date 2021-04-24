@@ -53,9 +53,17 @@
 // -- Стили самого слайдера
 
 .reviews {
-  padding-top: 62px;
-  padding-bottom: 66px;
+  padding-top: 40px;
+  padding-bottom: 43px;
   background-color: map-get($bgc, 'primary');
+  @media screen and (min-width: 768px) {
+    padding-top: 61px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 62px;
+    padding-bottom: 66px;
+  }
 }
 
 .reviews__title {
@@ -67,6 +75,12 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 29px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
 }
 
 .reviews__text {
