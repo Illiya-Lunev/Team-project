@@ -1,0 +1,296 @@
+.contacts {
+  background-image: linear-gradient(to top, #fff5f6 93%, #ffffff 15%, #ffffff 15%);
+  padding-top: 43px;
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-list__item {
+  width: 220px;
+  padding: 43px 20px;
+  margin-bottom: 20px;
+
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.contact-list__item:hover {
+  box-shadow: 0px 10px 30px rgba(212, 20, 67, 0.3);
+}
+
+.contact-list__item:last-child {
+  margin-bottom: 54px;
+}
+
+.contact-list__agency-wraper {
+  display: inline-flex;
+  height: 16px;
+  margin-bottom: 25px;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 4px;
+}
+
+.cafe {
+  padding-left: 25px;
+  padding-right: 25px;
+  min-width: 80px;
+  background: #f0d1a5;
+}
+
+.foodstruck {
+  padding-left: 28px;
+  padding-right: 28px;
+  min-width: 130px;
+  background: #c2e297;
+}
+
+.contact-list__agency {
+  color: #ffffff;
+
+  text-transform: uppercase;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.contact-list__city {
+  margin-bottom: 10px;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+}
+
+.contact-list__description {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+}
+
+.contact-list__description::after {
+  display: block;
+  content: '';
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: #e1e1e1;
+  height: 1px;
+  width: 100%;
+}
+
+.contact-list__schedule {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+}
+
+.contact-list__time {
+  margin-bottom: 10px;
+
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #ffa5ba;
+}
+
+.contact-list__time:last-child {
+  margin-bottom: 0;
+}
+
+.contact-list__time::after {
+  display: block;
+  content: '';
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: #e1e1e1;
+  height: 1px;
+  width: 100%;
+}
+
+.contact-list__tel,
+.contact-list__mail {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+}
+
+.contact-list__tel:hover,
+.contact-list__mail:hover,
+.contact-list__tel:focus,
+.contact-list__mail:focus {
+  color: #ffa5ba;
+}
+
+.contact-list__tel {
+  display: block;
+}
+
+.contacts-button__map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 160px;
+  height: 44px;
+  padding: 15px 17px;
+  margin-bottom: 10px;
+
+  background: #d41342;
+  border: transparent;
+  border-radius: 22px;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.contacts-button__map:hover,
+.contacts-button__map:focus {
+  box-shadow: 0px 0px 3px 2px rgba(212, 20, 67, 0.2);
+}
+
+.contacts-button__franchise {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 164px;
+  height: 44px;
+  padding: 15px 17px;
+
+  background: #ffffff;
+  border: transparent;
+  border-radius: 22px;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  color: #d41443;
+  cursor: pointer;
+}
+
+.contacts-button__franchise:hover,
+.contacts-button__franchise:focus {
+  box-shadow: 0px 0px 3px 2px rgba(212, 20, 67, 0.2);
+}
+
+.contacts-button__icon {
+  margin-left: 14px;
+  width: 8px;
+  height: 10px;
+}
+
+.icon-map {
+  fill: #ffffff;
+}
+
+.icon-franchise {
+  fill: #d41443;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    background-image: linear-gradient(to top, #fff5f6 82%, #ffffff 15%, #ffffff 15%);
+    padding-top: 43px;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+
+  .contact-list__item {
+    width: calc((100% - 60px) / 3);
+    height: 100%;
+    margin: 10px;
+  }
+
+  .contact-list__agency {
+    font-size: 14px;
+  }
+
+  .contact-list__city {
+    font-size: 14px;
+  }
+
+  .contact-list__description {
+    font-size: 14px;
+    line-height: 1.83;
+  }
+
+  .contact-list__schedule {
+    font-size: 14px;
+  }
+
+  .contact-list__time {
+    font-size: 14px;
+  }
+
+  .contacts-button__wraper {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+  }
+
+  .contacts-button__map {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-list__item {
+    max-width: 330px;
+  }
+
+  .contact-list__agency {
+    font-size: 16px;
+  }
+
+  .contact-list__city {
+    font-size: 16px;
+  }
+
+  .contact-list__description {
+    font-size: 16px;
+    line-height: 1.83;
+  }
+
+  .contact-list__schedule {
+    font-size: 16px;
+  }
+
+  .contact-list__time {
+    font-size: 16px;
+  }
+}
