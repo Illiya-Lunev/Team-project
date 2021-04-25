@@ -65,6 +65,13 @@
 }
 
 
+.about__wrap {
+    padding-bottom: 39px;
+}
+
+
+
+
 
 .flex-container {
     display: flex;
@@ -130,6 +137,14 @@
     font-size: 16px;
     margin-top: 62px;
     }
+
+    .about__wrap {
+        padding-bottom:  66px;
+    }
+
+
+
+
 }   
 
 @media screen and (min-width: 1280px){
@@ -165,4 +180,7 @@
       .about__link {
         margin-top: 45px;
       }
+
+
+     
 }    
