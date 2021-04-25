@@ -53,15 +53,15 @@
 // -- Стили самого слайдера
 
 .reviews {
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 43px;
   background-color: map-get($bgc, 'primary');
   @media screen and (min-width: 768px) {
-    padding-top: 61px;
+    padding-top: 121px;
     padding-bottom: 60px;
   }
   @media screen and (min-width: 1280px) {
-    padding-top: 62px;
+    padding-top: 141px;
     padding-bottom: 66px;
   }
 }
@@ -118,7 +118,9 @@
 .reviews__container-text {
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(250, 250, 250, 0.4);
+  // background-color: rgba(250, 250, 250, 0.4);
+  background-color: map-get($bgc, 'comment') 0.4;
+
   background-image: url(/images/desktop/element-54x34.png);
   @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
@@ -130,9 +132,9 @@
   }
   background-repeat: no-repeat;
   max-width: 280px;
-  padding: 43px 66px 26px 57px;
-  background-position-x: 61px;
-  background-position-y: 28px;
+  padding: 43px 61.5px 26px 61.5px;
+  background-position-x: 62px;
+  background-position-y: 27px;
 
   @media screen and (min-width: 768px) {
     max-width: 620px;
@@ -148,11 +150,33 @@
     background-position-y: 32px;
   }
 }
+// Точки как псевдоелемент на всякий случай
+// .reviews__container-text::after {
+//   content: '';
+//   display: block;
+//   width: 32px;
+//   height: 4px;
+
+//   margin-top: 56px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   background-image: url(/images/point-red.svg);
+//   @media screen and (min-width: 768px) {
+//     margin-top: 58px;
+//   }
+// }
 
 .reviews__icon-points {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    margin-top: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 15px;
+  }
 }
 
 .reviews__name {
