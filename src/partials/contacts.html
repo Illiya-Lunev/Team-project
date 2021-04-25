@@ -1,4 +1,4 @@
-<section class="section contacts">
+<section class="section contacts" id="contacts">
     <div class="container contacts-container">
         <h2 class="section__title visually-hidden">Контакты</h2>
         <ul class="list contact-list">
@@ -9,9 +9,9 @@
                 <h3 class="contact-list__city">Chicago</h3>
                 <p class="contact-list__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
                 <p class="contact-list__schedule">Monday - Friday</p>
-                <p class="contact-list__time">06:00 AM - 10:00 PM</p>
+                <p class="contact-list__time"><time>06:00</time> AM - <time>10:00</time> PM</p>
                 <p class="contact-list__schedule">Saturday - Sunday</p>
-                <p class="contact-list__time">08:00 AM - 16:00 PM</p>
+                <p class="contact-list__time"><time>08:00</time> AM - <time>16:00</time> PM</p>
                 <a class="contact-list__tel link-style" href="tel:+610383766284">+61(0) 383 766 284</a>
                 <a class="contact-list__mail link-style" href="mailto:noreply@envato.com">noreply@envato.com</a>
             </li>
@@ -22,9 +22,9 @@
                 <h3 class="contact-list__city">Los Angeles</h3>
                 <p class="contact-list__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
                 <p class="contact-list__schedule">Monday - Friday</p>
-                <p class="contact-list__time">06:00 AM - 10:00 PM</p>
+                <p class="contact-list__time"><time>06:00</time> AM - <time>10:00</time> PM</p>
                 <p class="contact-list__schedule">Saturday - Sunday</p>
-                <p class="contact-list__time">08:00 AM - 16:00 PM</p>
+                <p class="contact-list__time"><time>08:00</time> AM - <time>16:00</time> PM</p>
                 <a class="contact-list__tel link-style" href="tel:+610383766284">+61(0) 383 766 284</a>
                 <a class="contact-list__mail link-style" href="mailto:noreply@envato.com">noreply@envato.com</a>
             </li>
@@ -35,20 +35,20 @@
                 <h3 class="contact-list__city">New York</h3>
                 <p class="contact-list__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
                 <p class="contact-list__schedule">Monday - Friday</p>
-                <p  class="contact-list__time">06:00 AM - 10:00 PM</p>
+                <p  class="contact-list__time"><time>06:00</time> AM - <time>10:00</time> PM</p>
                 <p class="contact-list__schedule">Saturday - Sunday</p>
-                <p class="contact-list__time">08:00 AM - 16:00 PM</p>
+                <p class="contact-list__time"><time>08:00</time> AM - <time>16:00</time> PM</p>
                 <a class="contact-list__tel link-style" href="tel:+610383766284">+61(0) 383 766 284</a>
                 <a class="contact-list__mail link-style" href="mailto:noreply@envato.com">noreply@envato.com</a>
             </li>
         </ul>
         <div class="contacts-button__wraper">
-            <button class="contacts-button__map" type="button" data-location-open>Our Locations
+            <button class="contacts-button__map" type="button" aria-label="Location" data-location-open>Our Locations
                 <svg class="contacts-button__icon icon-map">
                     <use href="./images/sprite.svg#strelka2"></use>
                 </svg>
             </button>
-            <button class="contacts-button__franchise" type="button" data-license-open>Franchise
+            <button class="contacts-button__franchise" type="button" aria-label="License" data-license-open>Franchise
                 <svg class="contacts-button__icon icon-franchise">
                     <use href="./images/sprite.svg#strelka"></use>
                 </svg>
@@ -86,15 +86,13 @@
     <div class="backdrop is-hidden" data-license>
         <div class="license">
             <button type="button" class="license-close-btn" data-license-close>
-                <svg width="11px" height="11px">
+                <svg  class="license__icon" width="11px" height="11px">
                     <use href="./images/sprite.svg#close">
                     </use>
                 </svg>
             </button>
             <form action="#">
                 <p class="license__text">Здесь должен быть длинный и скучный текст договора...</p>
-                
-    
                 <input type="checkbox" id="user-term" name="user-term" class="license-form__term visually-hidden">
                 <label for="user-term" class="license-form__check"><span>Соглашаюсь с рассылкой и принимаю&nbsp;<a
                             class="license-form__agreement" href=""> Условия договора</a></span></label>
