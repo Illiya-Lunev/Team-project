@@ -13,15 +13,12 @@
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffa5ba;
-  font-family: Titan One;
+  font-family: DM Sans, sans-serif;
 
   &__text {
     margin-bottom: 30px;
 
-    font-size: 20px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-    font-weight: 700;
+    @include font(16px, 14px, 0, 400);
     text-align: center;
 
     color: #ffffff;
@@ -50,24 +47,26 @@
 
   margin-bottom: 30px;
 
-  font-size: 10px;
-  line-height: 1.86;
-  letter-spacing: 0.04em;
-  text-decoration: none;
+  @include font(12px, 14px, 0, 400);
 
   &::before {
-    display: block;
     content: '';
+    margin-right: 8px;
     width: 16px;
-    height: 15px;
-    background-image: url('../images/Vector.svg');
+    height: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
     cursor: pointer;
+    transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     margin-right: 8px;
 
     .license-form__term:checked + & {
-      background-image: url('../images/icon-check.svg');
+      background: transparent;
+      background-image: url(../images/ice-cream4.svg);
       background-position: center;
+      background-repeat: no-repeat;
     }
 
     .license-form__term:focus + & {
@@ -89,12 +88,12 @@
 
 @media screen and (min-width: 768px) {
   .license-form__check {
-    font-size: 11px;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .license-form__check {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
