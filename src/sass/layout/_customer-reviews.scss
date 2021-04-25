@@ -118,8 +118,8 @@
 .reviews__container-text {
   margin-left: auto;
   margin-right: auto;
-  // background-color: rgba(250, 250, 250, 0.4);
-  background-color: map-get($bgc, 'comment') 0.4;
+  background-color: rgba(250, 250, 250, 0.4);
+  // background-color: map-get($bgc, 'comment') 0.4;
 
   background-image: url(/images/desktop/element-54x34.png);
   @media screen and (min-device-pixel-ratio: 2),
