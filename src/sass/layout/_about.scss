@@ -98,7 +98,7 @@
 
 @media screen and (max-width: 767px) {
     .flex-container {
-        display: block;
+        flex-direction: column;
     }
 }   
 
