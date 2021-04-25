@@ -69,7 +69,9 @@
     padding-bottom: 39px;
 }
 
-
+.about__link:hover {
+    background-color:rgba(236, 235, 235, 1);
+}
 
 
 
@@ -101,7 +103,7 @@
 }   
 
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
     .about__wrap {
         margin-top:56px;
     }
@@ -135,7 +137,7 @@
     }
 
     .about__wrap {
-        padding-bottom:  66px;
+        padding-bottom: 146px;
     }
 
 
@@ -160,12 +162,16 @@
         font-size: 16px;
         width: 463px;
         line-height: 28px;
+        margin-left:0px;
+        margin-right: 0px;
       }
   
       .about__text--mod {
         font-size: 16px;
         width: 463px;
         line-height: 28px;
+        margin-left:0px;
+        margin-right: 0px;
   
       }
 
@@ -179,6 +185,10 @@
 
       .about {
         background-image: url(/images/desktop/sectionbg11-1282x534.png);
+    }
+
+    .about__wrap {
+        padding-bottom: 146px;
     }
      
 }    
