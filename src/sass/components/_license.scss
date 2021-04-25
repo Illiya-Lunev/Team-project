@@ -13,6 +13,19 @@
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffa5ba;
+  font-family: Titan One;
+
+  &__text {
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    text-align: center;
+
+    color: #ffffff;
+  }
 }
 
 .license-close-btn {
@@ -37,7 +50,7 @@
 
   margin-bottom: 30px;
 
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.86;
   letter-spacing: 0.04em;
   text-decoration: none;
@@ -63,14 +76,24 @@
   }
 }
 
-.license__text {
-  margin-bottom: 30px;
+.license-form__agreement {
+  text-decoration: none;
+  color: #d41443;
 
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
-  font-weight: 700;
-  text-align: center;
+  &:focus,
+  &:hover {
+    color: #ffffff;
+  }
+}
 
-  color: #ffffff;
+@media screen and (min-width: 768px) {
+  .license-form__check {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .license-form__check {
+    font-size: 12px;
+  }
 }
