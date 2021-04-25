@@ -1,26 +1,35 @@
 .hero {
   background-color: #ffb8ca;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .hero__picture-milk:focus,
 .hero__picture-milk:hover {
   transform: scale(1.1);
+  transition-timing-function: linear;
+  transition-duration: 250ms;
 }
 
 .hero__picture-icecream:focus,
 .hero__picture-icecream:hover {
   transform: scale(1.1);
+  transition-timing-function: linear;
+  transition-duration: 250ms;
 }
 
 .hero__picture-girl:focus,
 .hero__picture-girl:hover {
   transform: scale(1.1);
+  transition-timing-function: linear;
+  transition-duration: 250ms;
 }
 
 .hero__button-description:focus,
 .hero__button-description:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  transition-timing-function: linear;
+  transition-duration: 250ms;
 }
 
 .hero__network-amount,
@@ -28,6 +37,8 @@
 .hero__network-amount,
 .hero__network-item:hover {
   transform: scale(1.1);
+  transition-timing-function: linear;
+  transition-duration: 250ms;
 }
 
 .hero__truck-amount,
@@ -35,11 +46,15 @@
 .hero__truck-amount,
 .hero__truck-item:hover {
   transform: scale(1.1);
+  transition-timing-function: linear;
+  transition-duration: 250ms;
 }
 
 .hero__title:hover,
 .hero__title:focus {
   transform: scale(1.1);
+  transition-timing-function: linear;
+  transition-duration: 250ms;
 }
 
 @media screen and (max-width: 767px) {
