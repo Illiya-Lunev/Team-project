@@ -1,11 +1,11 @@
 .about {
-    padding-top:125px;
-    padding-bottom: 39px;
-    background-color:rgba(255, 245, 246, 1);
+  padding-top: 125px;
+  padding-bottom: 39px;
+  background-color: rgba(255, 245, 246, 1);
 }
 
-
 .about__header {
+
     color:rgba(212, 20, 67, 1);
     font-size: 34px;
     text-align: center;
@@ -37,6 +37,7 @@
 
 
 .about__link {
+
     color: rgba(212, 20, 67, 1);
     display:block; 
     background-color:rgba(255, 255, 255, 1);
@@ -59,30 +60,25 @@
     font-family: Titan One,cursive;
     margin-bottom: 16px;
     text-transform: uppercase;
-    
-}
-
-
-
+    }
 
 .about__link:hover {
-    background-color:rgba(236, 235, 235, 1);
+  background-color: rgba(236, 235, 235, 1);
 }
 
-
-
 .flex-container {
-    display: flex;
+  display: flex;
 }
 
 .about {
-    background-color: #fff5f6;
-    text-align: center;
-    background-image: url(/images/mobile/sectionbg11-320x133.png);
-    background-size: 100%;
-    background-position-y: 80%;
-    background-repeat: no-repeat;
+  background-color: #fff5f6;
+  text-align: center;
+  background-image: url(/images/mobile/sectionbg11-320x133.png);
+  background-size: 100%;
+  background-position-y: 80%;
+  background-repeat: no-repeat;
 }
+
 
 
 .about-header__img {
@@ -92,8 +88,62 @@
     &:hover{
         transform: scale(1.02);
     }
+
+@media screen and (min-width: 767px) {
+  .about {
+    background-image: none;
+  }
 }
 
+@media screen and (max-width: 767px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .about__wrap {
+    margin-top: 56px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .about__title {
+    font-size: 26px;
+  }
+
+  .about__header {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+
+  .about__text {
+    font-size: 14px;
+    width: 340px;
+    line-height: 1.76;
+  }
+
+  .about__text--mod {
+    font-size: 14px;
+    width: 340px;
+    line-height: 1.76;
+  }
+
+  .about__link {
+    font-size: 16px;
+    margin-top: 62px;
+  }
+
+  .about {
+    padding-bottom: 146px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__title {
+    font-size: 30px;
+  }
 
 
 
@@ -103,6 +153,19 @@
         flex-direction: column;
     }
 }   
+
+  .about__header {
+    font-size: 58px;
+  }
+
+
+  .about__text {
+    font-size: 16px;
+    width: 463px;
+    line-height: 28px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 
 
 @media screen and (min-width: 768px) {
