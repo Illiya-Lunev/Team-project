@@ -215,6 +215,10 @@
       width: calc((100% - 60px) / 3);
       height: 100%;
       margin: 10px;
+
+      &:last-child {
+        margin-bottom: 10px;
+      }
     }
 
     &__city {
