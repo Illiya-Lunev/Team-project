@@ -18,7 +18,7 @@
   font-size: 12px;
   margin-bottom: 44px;
   font-weight: 500;
-  line-height: 19px;
+  line-height: 1.62;
   text-align: left;
   font-family: DM Sans;
 }
@@ -26,8 +26,7 @@
 .about__text--mod {
   font-size: 12px;
   color: rgba(144, 126, 130, 1);
-
-  line-height: 19px;
+  line-height: 1.62;
   text-align: left;
   font-family: DM Sans;
   font-weight: 500;
@@ -115,14 +114,14 @@
   .about__text {
     font-size: 14px;
     width: 340px;
-    line-height: 25px;
+    line-height: 1.76;
     margin-bottom: 35px;
   }
 
   .about__text--mod {
     font-size: 14px;
     width: 340px;
-    line-height: 25px;
+    line-height: 1.76;
     letter-spacing: 0.04em;
   }
 
