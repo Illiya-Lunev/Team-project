@@ -1,6 +1,5 @@
-.body {
-  background: #e5e5e5;
-  font-family: Titan One, sans-serif;
+body {
+  font-family: Titan One, cursive;
   color: #000000;
 }
 
@@ -29,3 +28,7 @@ img {
 .link-style {
   text-decoration: none;
 }
+
+html {
+  scroll-behavior: smooth;
+  }

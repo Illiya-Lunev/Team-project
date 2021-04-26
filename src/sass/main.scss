@@ -5,6 +5,12 @@
 @import './base/common';
 @import './base/container';
 
+@import './components/backdrop';
+@import './components/modal-form';
+@import './components/modal';
+@import './components/location';
+@import './components/license';
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/products';

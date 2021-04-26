@@ -1,0 +1,99 @@
+.license {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 40px 16px;
+  max-width: 528px;
+  min-width: 320px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #ffa5ba;
+  font-family: DM Sans, sans-serif;
+
+  &__text {
+    margin-bottom: 30px;
+
+    @include font(16px, 14px, 0, 400);
+    text-align: center;
+
+    color: #ffffff;
+  }
+}
+
+.license-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+
+  background: transparent;
+  border: transparent;
+  border-radius: 50%;
+}
+
+.license-form__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  @include font(12px, 14px, 0, 400);
+
+  &::before {
+    content: '';
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    margin-right: 8px;
+
+    .license-form__term:checked + & {
+      background: transparent;
+      background-image: url(../images/ice-cream4.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .license-form__term:focus + & {
+      outline: 1px solid #d41342;
+    }
+  }
+}
+
+.license-form__agreement {
+  text-decoration: none;
+  color: #d41443;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .license-form__check {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .license-form__check {
+    font-size: 16px;
+  }
+}

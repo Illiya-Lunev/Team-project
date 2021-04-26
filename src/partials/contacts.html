@@ -1,0 +1,103 @@
+<section class="section contacts" id="contacts">
+    <div class="container contacts-container">
+        <h2 class="section__title visually-hidden">Контакты</h2>
+        <ul class="list contact-list">
+            <li class="contact-list__item">
+                <div class="contact-list__agency-wraper cafe">
+                    <p class="contact-list__agency">CAFE</p>
+                </div>
+                <h3 class="contact-list__city">Chicago</h3>
+                <p class="contact-list__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                <p class="contact-list__schedule">Monday - Friday</p>
+                <p class="contact-list__time"><time>06:00</time> AM - <time>10:00</time> PM</p>
+                <p class="contact-list__schedule">Saturday - Sunday</p>
+                <p class="contact-list__time"><time>08:00</time> AM - <time>16:00</time> PM</p>
+                <a class="contact-list__tel link-style" href="tel:+610383766284">+61(0) 383 766 284</a>
+                <a class="contact-list__mail link-style" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+            <li class="list contact-list__item">
+                <div class="contact-list__agency-wraper foodstruck">
+                    <p class="contact-list__agency">FOODTRUCK</p>
+                </div>
+                <h3 class="contact-list__city">Los Angeles</h3>
+                <p class="contact-list__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                <p class="contact-list__schedule">Monday - Friday</p>
+                <p class="contact-list__time"><time>06:00</time> AM - <time>10:00</time> PM</p>
+                <p class="contact-list__schedule">Saturday - Sunday</p>
+                <p class="contact-list__time"><time>08:00</time> AM - <time>16:00</time> PM</p>
+                <a class="contact-list__tel link-style" href="tel:+610383766284">+61(0) 383 766 284</a>
+                <a class="contact-list__mail link-style" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+            <li class="list contact-list__item">
+                <div class="contact-list__agency-wraper cafe">
+                    <p class="contact-list__agency">CAFE</p>
+                </div>
+                <h3 class="contact-list__city">New York</h3>
+                <p class="contact-list__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                <p class="contact-list__schedule">Monday - Friday</p>
+                <p  class="contact-list__time"><time>06:00</time> AM - <time>10:00</time> PM</p>
+                <p class="contact-list__schedule">Saturday - Sunday</p>
+                <p class="contact-list__time"><time>08:00</time> AM - <time>16:00</time> PM</p>
+                <a class="contact-list__tel link-style" href="tel:+610383766284">+61(0) 383 766 284</a>
+                <a class="contact-list__mail link-style" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+        </ul>
+        <div class="contacts-button__wraper">
+            <button class="contacts-button__map" type="button" aria-label="Location" data-location-open>Our Locations
+                <svg class="contacts-button__icon icon-map">
+                    <use href="./images/sprite.svg#strelka2"></use>
+                </svg>
+            </button>
+            <button class="contacts-button__franchise" type="button" aria-label="License" data-license-open>Franchise
+                <svg class="contacts-button__icon icon-franchise">
+                    <use href="./images/sprite.svg#strelka"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="backdrop is-hidden" data-location>
+        <div class="location">
+            <button type="button" class="location-close-btn" data-location-close>
+                <svg class="location-close-icon" width="19" height="19">
+                    <use href="./images/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <p class="location__description">Our locations</p>
+            <ul class="address-list list">
+                <li class="address-list__item">
+                    <a href="https://goo.gl/maps/gWKaktZ5dk5vgcjF9" class="address-list__link link-style">
+                        Chicago</a>
+                </li>
+                <li class="address-list__item">
+                    <a href="https://goo.gl/maps/r2fg45GTF6jFgzLAA" class="address-list__link link-style">Los Angeles
+                    
+                    </a>
+                </li>
+                <li class="address-list__item">
+                    <a href="https://goo.gl/maps/VC61wGBSL4KvR9PRA" class="address-list__link link-style">New York</a>
+                </li>
+            </ul>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27405770525!2d-118.69192047471653!3d34.02016130653294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z0JvQvtGBLdCQ0L3QtNC20LXQu9C10YEsINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1619274010453!5m2!1sru!2sua"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+    </div>
+    <div class="backdrop is-hidden" data-license>
+        <div class="license">
+            <button type="button" class="license-close-btn" data-license-close>
+                <svg  class="license__icon" width="11px" height="11px">
+                    <use href="./images/sprite.svg#close">
+                    </use>
+                </svg>
+            </button>
+            <form action="#">
+                <p class="license__text">There should be long and boring text ...</p>
+                <input type="checkbox" id="user-term" name="user-term" class="license-form__term visually-hidden">
+                <label for="user-term" class="license-form__check"><span>I agree to recieve messages and&nbsp;<a
+                            class="license-form__agreement" href="">accept</a></span></label>
+            </form>
+        </div>
+    
+    </div>
+</section>

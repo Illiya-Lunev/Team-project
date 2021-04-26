@@ -1,0 +1,93 @@
+.advantages {
+  padding-bottom: 97px;
+  background-color: map-get($bgc, 'secondary');
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 140px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 139px;
+  }
+}
+
+.advantages__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -60px;
+    margin-top: -30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: -30px;
+  }
+}
+.advantages__item {
+  font-family: $primary-font;
+  @include font(12px, 20px, 0.02em, 700);
+
+  @media screen and (max-width: 767px) {
+    max-width: 230px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 60px);
+    margin-left: 60px;
+    margin-top: 30px;
+    @include font(14px, 24px, 0.02em, 700);
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    @include font(16px, 28px, 0.02em, 700);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 38px;
+    }
+  }
+
+  &::before {
+    display: block;
+    content: '';
+    margin-bottom: 16px;
+    height: 50px;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 36px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 40px;
+    }
+  }
+}
+.advantages__item--first::before {
+  background-image: url('../images/icon1-33x50.png');
+}
+
+.advantages__item--second::before {
+  background-image: url('../images/icon2-50x50.png');
+}
+
+.advantages__item--third::before {
+  background-image: url('../images/icon3-44x50.png');
+}
+
+.advantages__numeral {
+  display: block;
+  margin-bottom: 13px;
+  font-family: $secondary-font;
+  @include font(36px, 41px, 0.04em, 400);
+  color: map-get($text, 'title');
+
+  @media screen and (min-width: 768px) {
+    @include font(48px, 55px, 0.04em, 400);
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+    @include font(58px, 66px, 0.04em, 400);
+  }
+}
