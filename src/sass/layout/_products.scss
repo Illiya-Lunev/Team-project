@@ -199,11 +199,11 @@
 
   &__description,
   &__more {
-    &::-webkit-scrollbar{
+    &::-webkit-scrollbar {
       background-color: #8080806e;
       width: 4px;
     }
-    &::-webkit-scrollbar-thumb{
+    &::-webkit-scrollbar-thumb {
       background-color: map-get($map: $bgc, $key: menu);
     }
 
@@ -250,9 +250,7 @@
 
   &__wrap {
     position: relative;
-    padding-bottom: 10px;
     width: 100%;
-    // height: 100%;
     overflow: hidden;
   }
 
@@ -264,7 +262,7 @@
     overflow: auto;
     height: 70%;
     width: 100%;
-    transform: translateX(-100%);
+    transform: translateX(-110%);
 
     transition: transform 250ms linear;
   }
