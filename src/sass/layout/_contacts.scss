@@ -17,6 +17,8 @@
 }
 
 .contact-list {
+  margin-bottom: 54px;
+
   &__item {
     width: 220px;
     padding: 43px 20px;
@@ -34,7 +36,7 @@
     }
 
     &:last-child {
-      margin-bottom: 54px;
+      margin-bottom: 0;
     }
   }
 
@@ -230,10 +232,16 @@
       justify-content: center;
 
       width: 100%;
+
+      margin-top: 81px;
     }
     &__map {
       margin-right: 15px;
     }
+  }
+
+  .contacts-button__map {
+    margin-bottom: 0px;
   }
 }
 
