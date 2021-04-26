@@ -200,11 +200,12 @@
   &__description,
   &__more {
     &::-webkit-scrollbar {
-      background-color: #8080806e;
+      background-color: transparent;
       width: 4px;
     }
+
     &::-webkit-scrollbar-thumb {
-      background-color: map-get($map: $bgc, $key: menu);
+      background-color: transparent;
     }
 
     font-family: $primary-font;
@@ -265,6 +266,17 @@
     transform: translateX(-110%);
 
     transition: transform 250ms linear;
+
+    &:hover::-webkit-scrollbar,
+    &:focus::-webkit-scrollbar {
+      background-color: #8080806e;
+      width: 4px;
+    }
+
+    &:hover::-webkit-scrollbar-thumb,
+    &:focus::-webkit-scrollbar-thumb {
+      background-color: map-get($map: $bgc, $key: menu);
+    }
   }
 
   &__more.is-show {
