@@ -1,4 +1,4 @@
-<header>
+<header id="home">
   <div class="container">
     <nav class="navigation">
       <a class="logo link-style" href="index.html">
@@ -10,7 +10,7 @@
       <ul class="navigation-list list">
         <li class="navigation-list__item">
           <a
-            href="index.html"
+            href="#home"
             class="navigation-list__link link-style navigation-list__link--current"
             >Home</a
           >
@@ -57,22 +57,23 @@
       <ul class="navigation-list list">
         <li class="navigation-list__item">
           <a
-            href="index.html"
+            data-menu-close1
+            href="#home"
             class="navigation-list__link link-style navigation-list__link--current"
             >Home</a
           >
         </li>
         <li class="navigation-list__item">
-          <a href="#reviews" class="navigation-list__link link-style">About us</a>
+          <a href="#reviews" class="navigation-list__link link-style" data-menu-close2>About us</a>
         </li>
         <li class="navigation-list__item">
-          <a href="#about" class="navigation-list__link link-style">How it's made?</a>
+          <a href="#about" class="navigation-list__link link-style" data-menu-close3>How it's made?</a>
         </li>
         <li class="navigation-list__item">
-          <a href="#products" class="navigation-list__link link-style">Our products</a>
+          <a href="#products" class="navigation-list__link link-style" data-menu-close4>Our products</a>
         </li>
         <li class="navigation-list__item">
-          <a href="#contacts" class="navigation-list__link link-style">Contact</a>
+          <a href="#contacts" class="navigation-list__link link-style" data-menu-close5>Contact</a>
         </li>
       </ul>
     </nav>
