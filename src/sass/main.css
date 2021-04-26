@@ -68,6 +68,7 @@ img {
 
 .about {
   padding-top: 125px;
+  padding-bottom: 39px;
   background-color: #fff5f6;
 }
 
@@ -76,8 +77,6 @@ img {
   font-size: 34px;
   text-align: center;
   font-weight: 1000;
-  margin-left: 10px;
-  margin-right: 10px;
   font-family: Titan One,cursive;
 }
 
@@ -85,8 +84,6 @@ img {
   font-size: 12px;
   margin-bottom: 44px;
   font-weight: 600;
-  margin-left: 16px;
-  margin-right: 16px;
   line-height: 1.62;
   text-align: left;
   font-family: DM Sans;
@@ -96,8 +93,6 @@ img {
   font-size: 12px;
   color: #907e82;
   margin-bottom: 16px;
-  margin-left: 16px;
-  margin-right: 16px;
   line-height: 1.62;
   text-align: left;
   font-family: DM Sans;
@@ -113,8 +108,6 @@ img {
   font-weight: 700;
   font-size: 14px;
   margin-top: 45px;
-  margin-left: 16px;
-  margin-right: 56px;
   width: 176px;
   height: 44px;
 }
@@ -125,11 +118,7 @@ img {
   text-align: center;
   font-weight: 900;
   font-family: Titan One,cursive;
-  margin-bottom: 15px;
-}
-
-.about__wrap {
-  padding-bottom: 39px;
+  margin-bottom: 16px;
 }
 
 .about__link:hover {
@@ -169,10 +158,11 @@ img {
 @media screen and (min-width: 768px) {
   .about__wrap {
     margin-top: 56px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
   .about__title {
     font-size: 26px;
-    margin-bottom: 16px;
   }
   .about__header {
     font-size: 48px;
@@ -192,7 +182,7 @@ img {
     font-size: 16px;
     margin-top: 62px;
   }
-  .about__wrap {
+  .about {
     padding-bottom: 146px;
   }
 }
@@ -227,7 +217,7 @@ img {
   .about {
     background-image: url(/images/desktop/sectionbg11-1282x534.png);
   }
-  .about__wrap {
+  .about {
     padding-bottom: 146px;
   }
 }
